@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>長照課程紀錄與評鑑資料系統</title>
+<meta name="description" content="巷弄長照站課程紀錄的內部管理工具說明。">
+<style>
+  :root { --ink: #1f2328; --muted: #57606a; --paper: #fbfaf7; --line: #d8d2c4; --accent: #7b4b22; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font: 17px/1.8 "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", system-ui, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  h1 { font-size: 1.75rem; line-height: 1.4; margin: 0 0 .5rem; padding-bottom: .75rem; border-bottom: 3px solid var(--accent); }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; color: var(--accent); }
+  p, li { text-wrap: pretty; }
+  .lead { color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>長照課程紀錄與評鑑資料系統</h1>
+  <p class="lead">巷弄長照站課程紀錄的內部管理工具，不是對外開放的公開服務。</p>
+
+  <h2>系統用途</h2>
+  <p>據點人員以 Google 表單填寫課程日期、據點、課程分類、授課資訊、參與人數及四張照片後，系統以 Google Apps Script 自動：</p>
+  <ul>
+    <li>把課程紀錄寫入僅限管理者存取的 Google 試算表，並更新年度統計。</li>
+    <li>依固定版型產生課程紀錄 PDF，存放在私人 Google 雲端硬碟資料夾。</li>
+    <li>PDF 完成後，把該筆紀錄上傳的照片移至雲端硬碟垃圾桶。</li>
+  </ul>
+
+  <h2>使用對象</h2>
+  <p>僅供系統維護者與經授權的管理者使用。系統不寄送電子郵件，也不公開分享任何紀錄或 PDF。</p>
+
+  <h2>隱私權</h2>
+  <p>資料蒐集、使用與保存方式請見<a href="privacy.html">隱私權政策</a>。</p>
+
+  <footer>
+    聯絡系統維護者：<a href="mailto:poca9361@gmail.com">poca9361@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
